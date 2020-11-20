@@ -7,7 +7,7 @@ This project contains various data science tools, each running as their own micr
 - [x] RStudio
 - [x] Spyder
 - [ ] IBM SAS
-- [ ] Git
+- [x] Git
 - [x] Jupyter Notebook
 - [x] Orange
 - [ ] Visual Studio Code
