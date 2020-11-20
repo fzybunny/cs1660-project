@@ -15,7 +15,7 @@ This project contains various data science tools, each running as their own micr
 - [ ] Apache Spark
 - [ ] Tableau
 - [ ] SonarQube & SonarScanner
-- [ ] Tensorflow
+- [x] Tensorflow
 - [ ] Markdown
 
 ## Notes
