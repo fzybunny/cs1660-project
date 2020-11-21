@@ -12,7 +12,7 @@ This project contains various data science tools, each running as their own micr
 - [x] Orange
 - [ ] Visual Studio Code
 - [x] Apache Hadoop
-- [ ] Apache Spark
+- [x] Apache Spark
 - [ ] Tableau
 - [ ] SonarQube & SonarScanner
 - [x] Tensorflow
@@ -22,3 +22,4 @@ This project contains various data science tools, each running as their own micr
 The following resources may be helpful for development.
  * [Running GUI Apps in Docker](http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/)
  * [GUI in Docker over SSH](https://blog.yadutaf.fr/2017/09/10/running-a-graphical-app-in-a-docker-container-on-a-remote-server/)
+ * [Ubuntu Package Search](https://packages.ubuntu.com/search)
