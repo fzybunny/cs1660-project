@@ -6,7 +6,7 @@ This project contains various data science tools, each running as their own micr
 ## Progress
 - [x] RStudio
 - [x] Spyder
-- [ ] IBM SAS
+- [x] IBM SAS
 - [x] Git
 - [x] Jupyter Notebook
 - [x] Orange
@@ -14,7 +14,7 @@ This project contains various data science tools, each running as their own micr
 - [x] Apache Hadoop
 - [x] Apache Spark
 - [ ] Tableau
-- [-] SonarQube & SonarScanner
+- [x] SonarQube & SonarScanner
 - [x] Tensorflow
 - [ ] Markdown
 
