@@ -13,10 +13,10 @@ This project contains various data science tools, each running as their own micr
 - [ ] Visual Studio Code
 - [x] Apache Hadoop
 - [x] Apache Spark
-- [ ] Tableau
+- [x] Tableau
 - [x] SonarQube & SonarScanner
 - [x] Tensorflow
-- [ ] Markdown
+- [x] Markdown
 
 ## Notes
 The following resources may be helpful for development.
