@@ -4,19 +4,24 @@
 #
 # Ideally, we would use the Docker API for Python, but for some reason, we
 # are unable to run GUI applications with it. Instead, the shell commands
-# are used.
+# are used. 
+#
+# +***************************************************+
+# * WARNING: !!! THIS IS SUPER BAD AND DANGEROUS  !!! *
+# *          !!! DO NOT USE IN A REAL ENVIRONMENT !!! *
+# +***************************************************+
 #
 # Additionally, there is probably a much cleaner way to launch each
 # program, instead of having a separate function for each, but I don't know
 # what that would be.
 
-import docker
+#import docker
 import os
 import tkinter as tk
 
 # Build a container from the given directory with the given name
 def build_container(build_dir, name):
-	build_command = 'docker build -t {} /home/jim/1660/{}'.format(name, build_dir)
+	build_command = 'docker build -t {} /home/1660/{}'.format(name, build_dir)
 
 	print('\n\n ----- BEGIN CONTAINER BUILD -----\n{}\n'.format(build_command))
 	os.system(build_command)
@@ -33,13 +38,16 @@ def run_container(name):
 
 
 def launch_app(build_dir, name):
-	build_command = 'docker build -t {} /home/jim/1660/{}'.format(name, build_dir)
-	run_command = 'docker run -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -it {}'.format(name)
+	build_container(build_dir, name)
+	run_container(name)
 
-	print(build_command)
-	os.system(build_command)
-	print(run_command)
-	os.system(run_command)
+#	build_command = 'docker build -t {} /home/1660/{}'.format(name, build_dir)
+#	run_command = 'docker run -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -it {}'.format(name)
+#
+#	print(build_command)
+#	os.system(build_command)
+#	print(run_command)
+#	os.system(run_command)
 	
 
 
@@ -48,7 +56,7 @@ def run_xclock():
 	launch_app('xclock', 'my-xclock-test')
 
 
-# TODO: Check broken packages? This worked several hours ago...
+# OK!
 def run_rstudio():
 	launch_app('rstudio', 'my-rstudio-test')
 
@@ -107,6 +115,7 @@ def run_tensorflow():
 	launch_app('tensorflow', 'my-tensorflow-test')
 
 
+# OK!
 def run_markdown():
 	launch_app('markdown', 'my-markdown-test')
 
@@ -130,7 +139,7 @@ class AppSelect(tk.Frame):
 	def __init__(self, master=None):
 		super().__init__(master)
 
-		self.docker_client = docker.from_env()
+#		self.docker_client = docker.from_env()
 
 		self.app_buttons = []
 
