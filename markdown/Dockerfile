@@ -11,8 +11,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update --fix-missing
 RUN apt install -y retext
 
-RUN useradd -ms /bin/bash user
-WORKDIR /home/user
-USER USER
+RUN useradd -ms /bin/bash mduser
+WORKDIR /home/mduser
+USER mduser
 
 CMD [ "retext" ]
