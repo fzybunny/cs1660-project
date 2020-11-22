@@ -1,8 +1,10 @@
-# This is the Anaconda Dockerfile, but we use Ubuntu as a base instead of
-# Debian because Ubuntu is easier to run graphical applications.
+# This is the Anaconda Dockerfile, but we use our own Firefox base image
+# (Ubuntu) instead of Debian.
 
 #FROM debian:buster-slim
-FROM ubuntu:focal
+FROM jat1902/firefox
+
+USER root
 
 # Make tzdata happy.
 ENV TZ=Etc/UTC
@@ -29,9 +31,7 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_6
     /opt/conda/bin/conda clean -afy
 
 RUN apt-get install -y libgl1 python3-pyqt5.qtwebkit
-RUN apt-get install -y firefox
 
-RUN useradd -ms /bin/bash user
-USER user
+USER foxuser
 
-CMD [ "/bin/bash" ]
+CMD [ "jupyter-notebook", "--ip=127.0.0.1", "--port=12345" ]

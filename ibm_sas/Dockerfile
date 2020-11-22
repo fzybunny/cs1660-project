@@ -1,10 +1,3 @@
-FROM ubuntu:focal
-
-RUN apt update
-RUN apt install -y firefox
-
-RUN useradd -ms /bin/bash user
-USER user
-WORKDIR /home/user
+FROM jat1902/firefox
 
 CMD [ "firefox", "https://www.pdesas.org/Profile/Account/Login" ]
