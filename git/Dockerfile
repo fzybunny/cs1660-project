@@ -1,14 +1,10 @@
 FROM ubuntu:focal
 
-# Make tzdata happy.
-ENV TZ=Etc/UTC
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
 RUN apt update --fix-missing -y
-RUN apt install -y git-gui
+RUN apt install -y git
 
-RUN useradd -ms /bin/bash user
-USER user
-WORKDIR /home/user/
+RUN useradd -ms /bin/bash gituser
+USER gituser
+WORKDIR /home/gituser/
 
-CMD [ "git", "gui" ]
+CMD [ "/bin/bash" ]
