@@ -1,12 +1,26 @@
 # Data Science Toolbox
 Project 1 for CS 1660, Fall 2020
 
-This project contains various data science tools, each running as their own microservice through Docker.
+This project contains various data science tools, each running as their own
+microservice through Docker.
 
 ## Progress
 - [x] Containers for all applications
 - [ ] Top-level GUI
-- [ ] All containers executable from GUI
+- [ ] All containers runnable from GUI
+	- [ ] RStudio
+	- [x] Spyder
+	- [x] IBM SAS
+	- [x] Git
+	- [x] Jupyter
+	- [x] Orange
+	- [x] Visual Studio Code
+	- [x] Hadoop
+	- [x] Spark
+	- [x] Tableau
+	- [x] SonarQube & SonarScanner
+	- [x] Tensorflow
+	- [x] Markdown
 
 ## Notes
 The following resources may be helpful for development.
