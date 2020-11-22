@@ -6,21 +6,8 @@ microservice through Docker.
 
 ## Progress
 - [x] Containers for all applications
+- [x] All containers runnable from GUI
 - [ ] Top-level GUI
-- [ ] All containers runnable from GUI
-	- [ ] RStudio
-	- [x] Spyder
-	- [x] IBM SAS
-	- [x] Git
-	- [x] Jupyter
-	- [x] Orange
-	- [x] Visual Studio Code
-	- [x] Hadoop
-	- [x] Spark
-	- [x] Tableau
-	- [x] SonarQube & SonarScanner
-	- [x] Tensorflow
-	- [x] Markdown
 
 ## Notes
 The following resources may be helpful for development.
