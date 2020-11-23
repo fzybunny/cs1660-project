@@ -12,8 +12,19 @@ microservice through Docker.
 Although the interface is still very clunky, we expect that all of the
 applications for this project are properly functioning.
 
+## Submission
+The required video portions of the submission are hosted on OneDrive.
+ * [Code Walkthrough](https://pitt-my.sharepoint.com/:v:/g/personal/jat190_pitt_edu/ESa-gVuQYSBIk8dLfH7H5L0BErR1aA0RCW5hNxwwpvBx-Q?e=vXgXkH)
+ * [Demonstration](https://pitt-my.sharepoint.com/:v:/g/personal/jat190_pitt_edu/ERz_RS3F9CFNoJSjRQwg_CIBA_L8cCQ8m3iqRjB2yIfl-w?e=szP4Gu)
+
+
 ## Running
 ### Prerequisites
+The instructions below are for Linux. Other operating systems may have
+different methods for forwarding GUIs or accessing the Docker daemon. If you
+have issues running the applications in non-Linux environments, consult the
+documentation for your operating system's version of Docker.
+
 It is assumed that Docker and a web browser are installed for running this
 container.
 
@@ -133,6 +144,10 @@ analyse, along with the project key, and launch the application again. This
 will start SonarScanner, which will analyse the code in the given directory.
 After some time, if the scanner was able to properly connect to SonarQube, the
 results will be displayed in the browser.
+
+After the first run, an error saying that 'the container name is already in
+use' will appear. This is expected, and the program should continue functioning
+normally.
 
 ## Notes
 The following resources may be helpful for development.
